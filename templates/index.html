@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+   <head>
+      <title>{{ TITLE }}</title>
+      <meta http-equiv="refresh" content="3">
+      <link rel="stylesheet" href="../static/style.css/">
+   </head>
+   <body>
+   <center>
+      <h2>Information on card: {{ TEXT|safe }}</h2>
+      <h2>RFID Number: {{ ID }}</h2>
+   </center>
+   </body>
+  <div class="led-box">
+    <div class="led-green"></div>
+    <p>Unoccupied</p>
+  <div class="led-box">
+    <div class="led-blue"></div>
+    <p>Occupied</p>
+  </div>
+  <div class="led-box">
+    <div class="led-red"></div>
+    <p>Non-Stevens Card</p>
+  </div>
+</div>
+</html>
