@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-   <head>
-      <title>{{ TITLE }}</title>
-      <meta http-equiv="refresh" content="3">
-      <link rel="stylesheet" href="../static/style.css/">
-   </head>
-   <body>
-   <center>
-      <h2>Information on card: {{ TEXT|safe }}</h2>
-      <h2>RFID Number: {{ ID }}</h2>
-   </center>
-   </body>
-  <div class="led-box">
-    <div class="led-green"></div>
-    <p>Unoccupied</p>
-  <div class="led-box">
-    <div class="led-blue"></div>
-    <p>Occupied</p>
-  </div>
-  <div class="led-box">
-    <div class="led-red"></div>
-    <p>Non-Stevens Card</p>
-  </div>
-</div>
+	<head>
+	<title>{{ TITLE }}</title>
+	<meta http-equiv="refresh" content="3">
+	<link rel="stylesheet" href="../static/style.css/">
+	</head>
+	<body>
+	<center>
+		<h2>Information on card: {{ TEXT }}</h2>
+		<h2>RFID Number: {{ ID }}</h2>
+		<h2>First Name/Last Name/Year: {{ FIRSTNAME }} {{ LASTNAME }} {{ YEAR }}</h2>
+		<h2>Sensor Status: {{ STATUS }}</h2>
+			{% if stevensID == 1 %}
+			<div class="led led-blue"</div>
+			{% else %}
+			<div class="led"</div>
+			{% endif %}
+			{% if stevensID == 0 %}
+			<div class="led led-green"</div>
+			{% else %}
+			<div class="led"</div>
+			{% endif %}
+	</center>
+	</body>
 </html>
