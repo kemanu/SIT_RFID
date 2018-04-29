@@ -134,8 +134,6 @@ def demo():
 		'LASTNAME2' : lastName[1],
 		'LASTNAME3' : lastName[2],
 		'LASTNAME4' : lastName[3],
-		'ARRAY' : firstName,
-		'ARRAY2' : lastName,
 	}
 	return render_template('demo.html', **templateData)
 
