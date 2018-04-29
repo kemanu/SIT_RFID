@@ -4,14 +4,14 @@ An RFID detection system using SQLite3, Python, RaspberryPi 3, and MFRC522. A pr
 
 ## Getting Started
 
-Update your raspberry pi:
-sudo apt-get update
-sudo apt-get upgrade
+Update your raspberry pi:  
+sudo apt-get update  
+sudo apt-get upgrade  
 
-Get SPI-py and install it:
-git clone https://github.com/lthiery/SPI-Py.git
-cd ~/SPI-Py
-sudo python setup.py install
+Get SPI-py and install it:  
+git clone https://github.com/lthiery/SPI-Py.git  
+cd ~/SPI-Py  
+sudo python setup.py install  
 
 Get the MFRC522 Code:
 git clone https://github.com/pimylifeup/MFRC522-python.git
