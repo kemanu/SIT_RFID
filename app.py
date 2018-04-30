@@ -61,7 +61,7 @@ def index():
 		lastName = "N/A"
 		year = "N/A"
 	templateData = {
-		'TITLE' : 'Data',
+		'TITLE' : 'Home',
 		'ID' : id,
 		'TEXT' : text,
 		'stevensID' : stevensID,

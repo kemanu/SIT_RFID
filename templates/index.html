@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-	<head>
+{% extends 'layout.html' %}
+	{% block head %}
 	<title>{{ TITLE }}</title>
-	<meta http-equiv="refresh" content="3">
+	<meta http-equiv="refresh" content="5">
 	<link rel="stylesheet" href="../static/style.css/">
-	</head>
-	<body>
+	{% endblock %}
+	{% block body %}
 	<center>
-		<a href="./demo">Demo</a>
-		<h1>Student: {{ TEXT }}</h1>
-		<h1>RFID Number: {{ ID }}</h1>
-		<h1>First Name: {{ FIRSTNAME }}</h1>
-		<h1>Last Name: {{ LASTNAME }}</h1>
-		<h1>Year: {{ YEAR }}</h1>
-		<h1>{{ STATUS }}</h1>
+		<div class="jumbotron text-center">
+		<h1>{{ TEXT }},
+		{{ ID }},
+		{{ FIRSTNAME }},
+		{{ LASTNAME }},
+		Year {{ YEAR }},
+		{{ STATUS }}
+		</h1>
 			{% if stevensID == 1 %}
 			<div class="led led-blue"</div>
 			{% else %}
@@ -28,6 +29,7 @@
 			{% else %}
 			<div class="led"</div>
 			{% endif %}
+			</div>
 	</center>
-	</body>
+	{% endblock %}
 </html>
